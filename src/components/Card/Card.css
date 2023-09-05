@@ -1,0 +1,32 @@
+.area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #646cff;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    background-color: #4e5d73;
+}
+
+.number {
+    color: #52ffa8;
+}
+
+.advice {
+    color: #FFF;
+    font-size: 24px;
+    padding: 20px;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #52ffa8;
+    cursor: pointer;
+  }
