@@ -1,22 +1,27 @@
 .area {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #646cff;
+    padding: 30px 50px;
     border-radius: 10px;
-    width: 600px;
-    height: 300px;
+    text-align: center;
     background-color: #4e5d73;
+    max-width: 550px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto 20px;
 }
 
 .number {
+    text-transform: uppercase;
+    word-spacing: 10px;
     color: #52ffa8;
 }
 
 .advice {
+    margin: 20px auto 0; 
+    font-size: 28px;
+    width: 100%;
     color: #FFF;
-    font-size: 24px;
     padding: 20px;
 }
 
@@ -26,7 +31,6 @@ button {
     padding: 0.6em 1.2em;
     font-size: 1em;
     font-weight: 500;
-    font-family: inherit;
     background-color: #52ffa8;
     cursor: pointer;
-  }
+}
