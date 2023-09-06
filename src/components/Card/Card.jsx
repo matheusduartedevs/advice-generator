@@ -3,13 +3,15 @@ import './Card.css'
 
 const Card = () => {
     const [advice, setAdvice] = useState('')
+    const [id, setId] = useState('')
 
     const fetchData = async () => {
         try {
             await fetch('https://api.adviceslip.com/advice')
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data.slip.advice)
+                    console.log(data.slip.id)
+                    setId(data.slip.id)
                     setAdvice(data.slip.advice)
                 })
         } catch (error) {
@@ -23,9 +25,11 @@ const Card = () => {
 
     return (
         <div className="area">
-            <h3 className="number">Advice #001</h3>
             {
-                <p className="advice">"{advice}"</p>
+                <>
+                    <h3 className="number">Advice #{id}</h3>
+                    <p className="advice">"{advice}"</p>
+                </>
             }
             <button className="button" onClick={fetchData}>New Advice</button>
         </div>
